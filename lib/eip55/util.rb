@@ -8,7 +8,7 @@ module EIP55
       end
 
       def keccak256 buffer
-        Digest::SHA3.new(256).digest(buffer)
+        Digest::Keccak.new(256).digest(buffer)
       end
 
       def prefix address
